@@ -1,0 +1,111 @@
+/* Global CSS */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --yellow: #ffd700;
+  --blue: #0080ff;
+  /* --blue:#00FFFF; */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  scroll-behavior: smooth;
+}
+
+/* Header Section */
+.header {
+  background-color: var(--black);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--yellow);
+  flex-wrap: wrap;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.header-title {
+  line-height: 1.2;
+}
+
+.top-title {
+  color: var(--yellow);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.bottom-title {
+  color: var(--blue);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.nav-right {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-right li a:hover {
+  color: var(--yellow);
+}
+
+/* menu bar - mobile only*/
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav-right {
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 0px;
+  }
+
+  .nav-right li a {
+    font-size: 1rem;
+  }
+}

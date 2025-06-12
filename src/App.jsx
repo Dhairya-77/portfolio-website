@@ -1,9 +1,11 @@
+import Header from './sections/header'
+import './index.css'
 
 function App() {
 
   return (
     <>
-      <h1>Coming soon...</h1>
+      <Header/>
     </>
   )
 }

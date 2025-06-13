@@ -49,7 +49,7 @@ export default function Portfolio() {
     {
       title: 'Portfolio Website',
       tools: 'html,css,react',
-      desc: 'Personal portfolio website built with React and Vite. Showcases my skills, projects, resume, and social links in a modern layout.',
+      desc: 'Personal portfolio website built with react. Showcases my skills, projects, resume, and social links in a modern layout.',
       image: portfolio_img,
       link: 'https://github.com/Dhairya-77/portfolio-website',
     },
@@ -61,32 +61,32 @@ export default function Portfolio() {
       link: 'https://github.com/Dhairya-77/yt-clone',
     },
     {
+      title: 'Quiz Web Application',
+      tools: 'angularjs, nodejs, expressjs, mongodb',
+      desc: 'A website in which Users can create and share quizzes, and others can take them. The results are stored and displayed to the user.',
+      image: quiz_img,
+      link: 'https://github.com/Dhairya-77/quiz-web-application',
+    },
+    {
+      title: 'QR Scanner & Generator',
+      tools: 'flutter, dart',
+      desc: 'A mobile/web app that scans QR codes using the camera and automatically copies the data to the clipboard and also supports custom QR code generation.',
+      image: qr_img,
+      link: 'https://github.com/Dhairya-77/qr-scanner-and-generator',
+    },
+    {
+      title: 'Weather Forcasting Website',
+      tools: 'python, django',
+      desc: 'A web app that fetches real-time weather data by city, state, or country using the OpenWeatherMap API.',
+      image: weather_img,
+      link: 'https://github.com/Pratik11-git/weather-website',
+    },
+    {
       title: 'Plug&Charge Zone - Android App',
       tools: 'kotlin, firebase, stripe',
       desc: 'An Android app that helps users find nearby EV charging stations, book slots in advance, and pay securely through a Stripe-integrated wallet system.',
       image: ev_img,
       link: 'https://github.com/Dhairya-77/ev-charging-station-app',
-    },
-    {
-      title: 'QR Scanner & Generator',
-      tools: 'flutter, dart',
-      desc: 'A mobile app that scans QR codes using the camera and automatically copies the data to the clipboard. Also supports custom QR code generation.',
-      image: qr_img,
-      link: 'https://github.com/Dhairya-77/qr-scanner-and-generator',
-    },
-    {
-      title: 'Quiz Web Application',
-      tools: 'angularjs, nodejs, expressjs, mongodb',
-      desc: 'A website in which Users can create and share quizzes, and others can take them. The results are stored and displayed for the creator.',
-      image: quiz_img,
-      link: 'https://github.com/Dhairya-77/quiz-web-application',
-    },
-    {
-      title: 'Weather Website',
-      tools: 'python, django, openweathermap api',
-      desc: 'A web app that fetches real-time weather data by city, state, or country using the OpenWeatherMap API.',
-      image: weather_img,
-      link: 'https://github.com/Pratik11-git/weather-website',
     },
   ];
 

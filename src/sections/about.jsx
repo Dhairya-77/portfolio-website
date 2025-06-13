@@ -7,13 +7,13 @@ const About = () => {
       <div className="about-content">
 
         <p>
-            I am Dhairya Bhoya, an aspiring software developer currently pursuing my Master of Computer 
-            Applications (MCA) from Charotar University of Science and Technology.I graduated with a B.Sc. 
-            in Information Technology with a 9.45 CGPA.
+            I’m Dhairya Bhoya, an aspiring software developer currently pursuing a Master of Computer Applications (MCA) at 
+            Charotar University of Science and Technology (CHARUSAT). I also hold a Bachelor's degree in Information 
+            Technology (B.Sc. IT) from the same university, where I graduated with 9.45 CGPA.
         </p>
 
-        <p> I am passionate about mobile and web app development, with experience in building Android apps 
-            using Kotlin and Flutter, as well as full-stack web apps using the MEAN stack.
+        <p> I am passionate about mobile and web app development, with experience in building Android apps, as well as 
+            full-stack web apps.
         </p>
 
         <p>

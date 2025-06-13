@@ -4,7 +4,7 @@ To run this project please refer requirement.txt file
 
 Some Functionalities:
 
-1)Home section – shows a dyanamin greetings and welcome message
+1)Home section – shows a dynamic greetings and welcome message
 
 2)About section – includes education, background, and resume download link
 

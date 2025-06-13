@@ -5,6 +5,7 @@
   --yellow: #ffd700;
   --blue: #0080ff;
   --cyan:#00FFFF;
+  --gray: #A0A0A0;
 }
 
 html, body {
@@ -15,7 +16,7 @@ html, body {
 }
 
 section{
-  padding: 2rem 1rem;
+  padding: 2.3rem 1rem;
 }
 
 /* Header Section */
@@ -27,6 +28,9 @@ section{
   align-items: center;
   border-bottom: 2px solid var(--yellow);
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-left {
@@ -95,11 +99,14 @@ section{
   align-items: center;
   background: linear-gradient(135deg, var(--blue), var(--yellow));
   text-align: center;
+  animation: fadeSlideIn 1s ease forwards;
 }
 
 .home-section h1 {
   font-size: 2.8rem;
   margin-bottom: 10px;
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 0.2s;
 }
 
 .home-section p {
@@ -107,6 +114,8 @@ section{
   margin-bottom: 30px;
   font-weight: 700;
   color: var(--white);
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 0.4s;
 }
 
 .home-section div {
@@ -128,12 +137,27 @@ section{
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 0.6s;
 }
 
 .home-section button:hover {
   background-color: var(--cyan);
   color: var(--black);
   transform: scale(1.05);
+}
+
+/* Animation in home section */
+@keyframes fadeSlideIn {
+  0%{
+    opacity: 0;
+    transform:translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* About Section */
@@ -191,6 +215,173 @@ section{
 }
 
 
+/* Skills Section */
+.skills-section {
+  background: var(--black);
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+
+.skill-cards {
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-self: center;
+}
+
+.skill-card {
+  background-color: var(--blue);
+  color: var(--yellow);
+  border-radius: 8px;
+  min-width: 5rem;
+  max-width: 6rem;
+  padding: 2px 12px;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.skill-card .icon {
+  font-size: 1.7rem;
+}
+
+
+.skill-card:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+  transform: scale(1.05);
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: var(--black);
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.6rem;
+  color: var(--yellow);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.projects-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 1rem;
+  padding: 0 1rem;
+  flex-wrap: nowrap;
+}
+
+.project-cards {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 1rem 0;
+  max-width: 80%;
+  scrollbar-width: none;
+}
+
+.project-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card {
+  background: linear-gradient(135deg, var(--yellow), var(--blue));
+  min-width: 380px;
+  max-width: 380px;
+  border-radius: 12px;
+  padding: 1rem;
+  flex-shrink: 0;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: fill;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  font-size: 1.7rem;
+  margin-top: 0.8rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  margin: 0.6rem 0;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.project-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: var(--yellow);
+  background-color: var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: var(--cyan);
+  color: var(--black);
+  transform: scale(1.05);
+}
+
+/* Arrow buttons */
+.arrow {
+  background: var(--blue);
+  color: var(--yellow);
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.arrow:hover:not(.disabled) {
+  background: var(--yellow);
+  color: var(--blue);
+}
+
+.arrow.disabled {
+  background: var(--gray);
+  cursor: not-allowed;
+}
+
 /* Footer Section */
 .footer {
   background-color: var(--black);
@@ -229,7 +420,7 @@ section{
 
   /* Section for mobile */
   section {
-    padding: 2rem 0.1rem; 
+    padding: 2.7rem 0.1rem; 
   }
 
   /*header for mobile*/
@@ -281,6 +472,59 @@ section{
     max-width: 350px;
   }
 
+  /* skills for mobile */
+
+  .skills-section h2 {
+    font-size: 2rem;
+  }
+
+  .skill-cards{
+    max-width: 350px;
+    gap: 15px;
+  }
+
+  .skill-card {
+    min-width: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .skill-card .icon {
+    font-size: 1.3rem;
+  }
+
+  /*projects for mobile*/
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+
+  .project-cards {
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+    max-width: 90%;
+  }
+
+  .project-card {
+    min-width: 85%;
+    max-width: 85%;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+  }
+
+  /* no arrow in mobile*/
+  .arrow{
+    display: none;
+  }
+
   /* footer for mobile */
    .footer p {
     font-size: 1.2rem;
@@ -290,5 +534,6 @@ section{
     font-size: 1.5rem;
     gap: 20px;
   }
+
   
 }

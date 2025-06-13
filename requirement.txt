@@ -1,0 +1,31 @@
+For successfully run this project you need to follow following straps:
+
+1)create new folder, inside unzip or pull(if you fork this repo) this project
+
+2)if you don't know how to create react app using vite
+    - first check that you have installed nodejs check using - command "node -v" or "npm -v"
+    - use command "npm create vite@latest your-react-app"
+    - then select framework (for react select react)
+    - then select variant (i choose javascript)
+    - after that it takes some time for creating your project
+
+3)open terminal or cmd go inside your project path and run "npm i" or "npm install" command(it downloads required node modules)
+
+4)also you have to install react-icons(because i used this library for icons)
+
+4)now your project is ready to run use "npm run dev" command to run your application
+    -now in terminal you get url called "Local" copy it and run it in your broswer to see your output of project locally
+    
+    -if you need it check it on also mobile,you have to connect with same network,and make changes in package.json
+        
+        -inside package.json find scripts add "--host" in dev
+        
+        example: 
+        "scripts": {
+            "dev": "vite --host",
+        }
+
+        -now agian run "npm run dev" command,now it gives you another url called "Network"
+
+        -run this url in your mobile it will so output of your app
+

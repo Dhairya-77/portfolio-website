@@ -16,9 +16,9 @@ For successfully run this project you need to follow following straps:
 4)now your project is ready to run use "npm run dev" command to run your application
     -now in terminal you get url called "Local" copy it and run it in your broswer to see your output of project locally
     
-    -if you need it check it on also mobile,you have to connect with same network,and make changes in package.json
+    -if you have to check it on mobile,you have to connect with same network,and make changes in package.json
         
-        -inside package.json find scripts add "--host" in dev
+        -inside package.json find scripts add "vite --host" in dev
         
         example: 
         "scripts": {

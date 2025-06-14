@@ -99,13 +99,13 @@ section{
   align-items: center;
   background: linear-gradient(135deg, var(--blue), var(--yellow));
   text-align: center;
-  animation: fadeSlideIn 1s ease forwards;
 }
 
 .home-section h1 {
   font-size: 2.8rem;
   margin-bottom: 10px;
-  animation: fadeSlideIn 1s ease forwards;
+  opacity: 0;
+  animation: fadeSlideIn 1s ease-out forwards;
   animation-delay: 0.2s;
 }
 
@@ -114,8 +114,9 @@ section{
   margin-bottom: 30px;
   font-weight: 700;
   color: var(--white);
-  animation: fadeSlideIn 1s ease forwards;
-  animation-delay: 0.4s;
+  opacity: 0;
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 0.5s;
 }
 
 .home-section div {
@@ -138,8 +139,8 @@ section{
   cursor: pointer;
   transition: all 0.3s ease;
   opacity: 0;
-  animation: fadeSlideIn 1s ease forwards;
-  animation-delay: 0.6s;
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 0.8s;
 }
 
 .home-section button:hover {

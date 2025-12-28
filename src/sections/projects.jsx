@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { FaGithub } from 'react-icons/fa';
 import ev_img from '../assets/ev_app_img.png';
+import fixsnap_img from '../assets/fixsnap_img.png';
 import portfolio_img from '../assets/portfolio_img.jpg';
 import qr_img from '../assets/qr_app_img.png';
 import quiz_img from '../assets/quiz_website_img.jpg';
@@ -47,6 +48,28 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: ' FixSnap – Android/Web app',
+      tools: 'flutter, dart, node.js, express.js, mongoDB atlas, supabase, Brevo, Render',
+      desc: ' An Android and Web-based home service application developed to connect consumers with trusted service providers. The app also includes an admin panel for easy management.',
+      image: fixsnap_img,
+      link: 'https://github.com/Dhairya-77/fixsnap-home-service-provider',
+    },
+    {
+      title: 'Plug&Charge Zone - Android App',
+      tools: 'kotlin, firebase, stripe',
+      desc: 'An Android app that helps users find nearby EV charging stations, book slots in advance, and pay securely through a Stripe-integrated wallet system.',
+      image: ev_img,
+      link: 'https://github.com/Dhairya-77/ev-charging-station-app',
+    },
+    {
+      title: 'QR Scanner & Generator',
+      tools: 'flutter, dart',
+      desc: 'A mobile/web app that scans QR codes using the camera and automatically copies the data to the clipboard and also supports custom QR code generation.',
+      image: qr_img,
+      link: 'https://github.com/Dhairya-77/qr-scanner-and-generator',
+    },
+  
+    {
       title: 'Portfolio Website',
       tools: 'html,css,react',
       desc: 'Personal portfolio website built with react. Showcases my skills, projects, resume, and social links in a modern layout.',
@@ -68,26 +91,13 @@ export default function Portfolio() {
       link: 'https://github.com/Dhairya-77/quiz-web-application',
     },
     {
-      title: 'QR Scanner & Generator',
-      tools: 'flutter, dart',
-      desc: 'A mobile/web app that scans QR codes using the camera and automatically copies the data to the clipboard and also supports custom QR code generation.',
-      image: qr_img,
-      link: 'https://github.com/Dhairya-77/qr-scanner-and-generator',
-    },
-    {
       title: 'Weather Forcasting Website',
       tools: 'python, django',
       desc: 'A web app that fetches real-time weather data by city, state, or country using the OpenWeatherMap API.',
       image: weather_img,
       link: 'https://github.com/Pratik11-git/weather-website',
     },
-    {
-      title: 'Plug&Charge Zone - Android App',
-      tools: 'kotlin, firebase, stripe',
-      desc: 'An Android app that helps users find nearby EV charging stations, book slots in advance, and pay securely through a Stripe-integrated wallet system.',
-      image: ev_img,
-      link: 'https://github.com/Dhairya-77/ev-charging-station-app',
-    },
+    
   ];
 
   return (

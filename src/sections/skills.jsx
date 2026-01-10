@@ -1,11 +1,12 @@
 import { FaJava, FaPython, FaNodeJs, FaReact, FaGitAlt, FaGithub } from 'react-icons/fa';
 import { DiMongodb, DiMysql } from 'react-icons/di';
-import { SiC, SiCplusplus, SiAndroid, SiKotlin, SiFirebase, SiFlutter , SiPhp, SiOracle } from 'react-icons/si';
+import { SiC, SiCplusplus, SiAndroid, SiKotlin, SiFirebase, SiFlutter , SiPhp, SiOracle, SiDjango, SiDart } from 'react-icons/si';
 
 const skills = [
   { name: 'Android', icon: <SiAndroid /> },
   { name: 'Flutter', icon: <SiFlutter /> },
   { name: 'Kotlin', icon: <SiKotlin /> },
+  { name: 'Dart', icon: <SiDart /> },
   { name: 'Firebase', icon: <SiFirebase /> },
   { name: 'Git', icon: <FaGitAlt /> },
   { name: 'GitHub', icon: <FaGithub /> },
@@ -13,6 +14,7 @@ const skills = [
   { name: 'C++', icon: <SiCplusplus /> },
   { name: 'Java', icon: <FaJava /> },
   { name: 'Python', icon: <FaPython /> },
+  { name: 'Django', icon: <SiDjango /> },
   { name: 'PHP', icon: <SiPhp /> },
   { name: 'SQL', icon: <SiOracle /> },
   { name: 'PLSQL', icon: <SiOracle /> },

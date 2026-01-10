@@ -52,14 +52,14 @@ export default function Portfolio() {
       tools: 'flutter, dart, node.js, express.js, mongoDB atlas, supabase, Brevo, Render',
       desc: ' An Android and Web-based home service application developed to connect consumers with trusted service providers. The app also includes an admin panel for easy management.',
       image: fixsnap_img,
-      link: 'https://github.com/Dhairya-77/fixsnap-home-service-provider',
+      link: 'https://github.com/Dhairya-77',
     },
     {
       title: 'Plug&Charge Zone - Android App',
       tools: 'kotlin, firebase, stripe',
       desc: 'An Android app that helps users find nearby EV charging stations, book slots in advance, and pay securely through a Stripe-integrated wallet system.',
       image: ev_img,
-      link: 'https://github.com/Dhairya-77/ev-charging-station-app',
+      link: 'https://github.com/Dhairya-77',
     },
     {
       title: 'QR Scanner & Generator',
@@ -68,20 +68,19 @@ export default function Portfolio() {
       image: qr_img,
       link: 'https://github.com/Dhairya-77/qr-scanner-and-generator',
     },
-  
-    {
-      title: 'Portfolio Website',
-      tools: 'html,css,react',
-      desc: 'Personal portfolio website built with react. Showcases my skills, projects, resume, and social links in a modern layout.',
-      image: portfolio_img,
-      link: 'https://github.com/Dhairya-77/portfolio-website',
-    },
     {
       title: 'VTUBE - YouTube Clone',
       tools: 'html, tailwind css, php, mysql',
       desc: 'A YouTube-like video-sharing platform where users can upload, like, dislike, save, and watch videos.',
       image: yt_img,
       link: 'https://github.com/Dhairya-77/yt-clone',
+    },
+    {
+      title: 'Portfolio Website',
+      tools: 'html,css,react',
+      desc: 'Personal portfolio website built with react. Showcases my skills, projects, resume, and social links in a modern layout.',
+      image: portfolio_img,
+      link: 'https://github.com/Dhairya-77/portfolio-website',
     },
     {
       title: 'Quiz Web Application',

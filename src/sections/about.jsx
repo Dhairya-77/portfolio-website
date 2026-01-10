@@ -23,7 +23,7 @@ const About = () => {
       </div>
 
       <div className="about-buttons">
-        <a href="https://drive.google.com/file/d/1RTkb7z4kTnl4zw3NgEXfe9uc1tYPeABq/view?usp=drivesdk" target="_blank" >
+        <a href="https://drive.google.com/file/d/1Xgor2ms_hu5aQh1uvJVAZy1h6Db4LZGR/view?usp=drivesdk" target="_blank" >
           <button> 📄 Resume </button>
         </a>
         <a href="https://www.linkedin.com/in/dhairya-bhoya-232623241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">

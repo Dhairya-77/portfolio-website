@@ -49,7 +49,7 @@ export default function Portfolio() {
   const projects = [
     {
       title: ' FixSnap – Android/Web app',
-      tools: 'flutter, dart, node.js, express.js, mongoDB atlas, supabase, Brevo, Render',
+      tools: 'flutter, dart, node.js, express.js, mongoDB atlas, supabase, brevo, render',
       desc: ' An Android and Web-based home service application developed to connect consumers with trusted service providers. The app also includes an admin panel for easy management.',
       image: fixsnap_img,
       link: 'https://github.com/Dhairya-77',
